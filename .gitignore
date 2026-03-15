@@ -14,5 +14,31 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 #codeigniter 3
 application/logs/*
 !application/logs/index.html
+!application/logs/index.html
 !application/logs/.htaccess
 /vendor/
+
+# Environment files (contain secrets)
+.env
+.env.backup
+env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Writable directories
+writable/cache/*
+writable/logs/*
+writable/session/*
+writable/uploads/*
+!writable/cache/index.html
+!writable/logs/index.html
+!writable/session/index.html
+!writable/uploads/index.html
